@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blanchard. Художественная галерея</title>
+
+<link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/OpenSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin>    
+
+<link rel="stylesheet" href="css/normalize.css">    
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.6/simplebar.min.css" integrity="sha512-uZTwaYYhJLFXaXYm1jdNiH6JZ1wLCTVnarJza7iZ1OKQmvi6prtk85NMvicoSobylP5K4FCdGEc4vk1AYT8b9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.6/simplebar.min.js" integrity="sha512-rn0CaCtyheymRT43p0ZuFH0SvNriLU5cuJpY2f4IcyLrbHzJdsIF1dygi9oNha1BhHagO8U+h2xRWCosYf9gCg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
+
+<script defer src="js/choices.min.js"></script>
+<script src="js/script.js"></script>
+
+</head>
+<body>
+<header class="header">
+  <div class="header__wrapper">
+    <div class="wrapper">                 
+        <div class="nav-bar">
+            <button class="btn-open">
+              <svg class="icon burger-icon">
+                <use xlink:href="image/icons.svg#burger-icon"></use>
+              </svg>                     
+            </button>            
+            <img src="image/logo.svg" alt="Blanchard. Художественная галерея" width="173" height="40" class="nav-bar__logo">
+            <nav class="main-nav">
+                <button class="close">
+                  <svg class="icon close-icon">
+                    <use xlink:href="image/icons.svg#close-icon"></use>
+                  </svg> 
+                </button>                  
+                <ul class="main-nav__items">
+                    <li class="main-nav__item">
+                        <a href="#about" class="main-nav__item-link bg-focus">О нас</a>                                  
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#gallery" class="main-nav__item-link bg-focus">Галерея</a>                                  
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#" class="main-nav__item-link bg-focus">Каталог</a>                                  
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#" class="main-nav__item-link bg-focus">События</a>                                  
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#" class="main-nav__item-link bg-focus">Проекты</a>                                  
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#" class="main-nav__item-link bg-focus">Контакты</a>                                  
+                    </li>
+                </ul>
+                <div class="login-mobile">                    
+                  <a href="#" class="login__link login-mobile__link">
+                    <svg class="icon login-icon">
+                      <use xlink:href="image/icons.svg#login-icon"></use>
+                    </svg>                      
+                    Войти
+                  </a>
+              </div>                  
+            </nav>
+            <div class="login">                    
+                <a href="#" class="login__link bg-focus">
+                  <svg class="icon login-icon">
+                    <use xlink:href="image/icons.svg#login-icon"></use>
+                  </svg>                      
+                  Войти
+                </a>
+            </div>
+        </div>
+    </div>
+  </div>      
+    <div class="menu">
+      <div class="wrapper menu__wrapper">
+        <ul class="menu__list">
+          <li class="menu__item">
+              <button class="menu__btn bg-focus">       
+                Реализм
+                <svg class="icon down-icon">
+                  <use xlink:href="image/icons.svg#down-icon"></use>
+                </svg>                 
+              </button>
+            <div class="menu__dropdown dropdown">
+              <div class="dropdown__simplebar">
+                <ul class="dropdown__list">
+                <li class="dropdown__item">
+                  <a href="#"><img class="dropdown__item-img" src="image/01.jpg" alt="Тинторетто" width="220" height="40"><span class="dropdown__item-title">Тинторетто</span> </a>                
+                </li>
+                <li class="dropdown__item">
+                  <a href="#"><img class="dropdown__item-img" src="image/02.jpg" alt="Фридрих" width="220" height="40"><span class="dropdown__item-title">Фридрих</span> </a>                
+                </li>
+                <li class="dropdown__item">
+                  <a href="#"><img class="dropdown__item-img" src="image/03.jpg" alt="Леонардо" width="220" height="40"><span class="dropdown__item-title">Леонардо</span> </a>                                
+                </li>
+                <li class="dropdown__item">
+                  <a href="#"><img class="dropdown__item-img" src="image/04.jpg" alt="Верроккьо" width="220" height="40"><span class="dropdown__item-title">Верроккьо</span> </a>                                                
+                </li>
+                <li class="dropdown__item">
+                  <a href="#"><img class="dropdown__item-img" src="image/01.jpg" alt="Тинторетто" width="220" height="40"><span class="dropdown__item-title">Тинторетто</span> </a>                
+                </li>
+                <li class="dropdown__item">
+                  <a href="#"><img class="dropdown__item-img" src="image/02.jpg" alt="Фридрих" width="220" height="40"><span class="dropdown__item-title">Фридрих</span> </a>                
+                </li>
+                <li class="dropdown__item">
+                  <a href="#"><img class="dropdown__item-img" src="image/03.jpg" alt="Леонардо" width="220" height="40"><span class="dropdown__item-title">Леонардо</span> </a>                                
+                </li>
+                <li class="dropdown__item">
+                  <a href="#"><img class="dropdown__item-img" src="image/04.jpg" alt="Верроккьо" width="220" height="40"><span class="dropdown__item-title">Верроккьо</span> </a>                                                
+                </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="menu__item">
+          <button class="menu__btn bg-focus">
+            Импрессионизм
+            <svg class="icon down-icon">
+              <use xlink:href="image/icons.svg#down-icon"></use>
+            </svg>              
+          </button>
+        <div class="menu__dropdown dropdown">
+        <div class="dropdown__simplebar">
+          <ul class="dropdown__list">
+            <li class="dropdown__item">
+              <a href="#"><img class="dropdown__item-img" src="image/05.jpg" alt="Моне" width="220" height="40"><span class="dropdown__item-title">Моне</span> </a>                
+            </li>
+            <li class="dropdown__item">
+              <a href="#"><img class="dropdown__item-img" src="image/06.jpg" alt="Сислей" width="220" height="40"><span class="dropdown__item-title">Сислей</span> </a>                
+            </li>
+            <li class="dropdown__item">
+              <a href="#"><img class="dropdown__item-img" src="image/07.jpg" alt="Мане" width="220" height="40"><span class="dropdown__item-title">Мане</span> </a>                
+            </li>
+            <li class="dropdown__item">
+              <a href="#"><img class="dropdown__item-img" src="image/08.jpg" alt="Ренуар" width="220" height="40"><span class="dropdown__item-title">Ренуар</span> </a>                
+            </li>
+            <li class="dropdown__item">
+              <a href="#"><img class="dropdown__item-img" src="image/05.jpg" alt="Моне" width="220" height="40"><span class="dropdown__item-title">Моне</span> </a>                
+            </li>
+            <li class="dropdown__item">
+              <a href="#"><img class="dropdown__item-img" src="image/06.jpg" alt="Сислей" width="220" height="40"><span class="dropdown__item-title">Сислей</span> </a>                
+            </li>
+            <li class="dropdown__item">
+              <a href="#"><img class="dropdown__item-img" src="image/07.jpg" alt="Мане" width="220" height="40"><span class="dropdown__item-title">Мане</span> </a>                
+            </li>
+            <li class="dropdown__item">
+              <a href="#"><img class="dropdown__item-img" src="image/08.jpg" alt="Ренуар" width="220" height="40"><span class="dropdown__item-title">Ренуар</span> </a>                
+            </li>
+          </ul>
+        </div>
+      </div>
+          </li>
+      
+          <li class="menu__item">
+        <button class="menu__btn bg-focus">
+          Постимпрессионизм
+          <svg class="icon down-icon">
+            <use xlink:href="image/icons.svg#down-icon"></use>
+          </svg>              
+        </button>
+        <div class="menu__dropdown dropdown">
+        <div class="dropdown__simplebar">
+          <ul class="dropdown__list">
+            <li class="dropdown__item">
+              <a href="#"><img class="dropdown__item-img" src="image/09.jpg" alt="Ван Гог" width="220" height="40"><span class="dropdown__item-title">Ван Гог</span> </a>                
+            </li>
+            <li class="dropdown__item">
+              <a href="#"><img class="dropdown__item-img" src="image/010.jpg" alt="Сезанн" width="220" height="40"><span class="dropdown__item-title">Сезанн</span> </a>                
+            </li>
+            <li class="dropdown__item">
+              <a href="#"><img class="dropdown__item-img" src="image/011.jpg" alt="Гоген" width="220" height="40"><span class="dropdown__item-title">Гоген</span> </a>                
+            </li>
+            <li class="dropdown__item">
+              <a href="#"><img class="dropdown__item-img" src="image/012.jpg" alt="Сёра" width="220" height="40"><span class="dropdown__item-title">Сёра</span> </a>                
+            </li>
+            <li class="dropdown__item">
+              <a href="#"><img class="dropdown__item-img" src="image/09.jpg" alt="Ван Гог" width="220" height="40"><span class="dropdown__item-title">Ван Гог</span> </a>                
+            </li>
+            <li class="dropdown__item">
+              <a href="#"><img class="dropdown__item-img" src="image/010.jpg" alt="Сезанн" width="220" height="40"><span class="dropdown__item-title">Сезанн</span> </a>                
+            </li>
+            <li class="dropdown__item">
+              <a href="#"><img class="dropdown__item-img" src="image/011.jpg" alt="Гоген" width="220" height="40"><span class="dropdown__item-title">Гоген</span> </a>                
+            </li>
+            <li class="dropdown__item">
+              <a href="#"><img class="dropdown__item-img" src="image/012.jpg" alt="Сёра" width="220" height="40"><span class="dropdown__item-title">Сёра</span> </a>                
+            </li>
+          </ul>
+        </div>
+      </div>
+          </li>
+          <li class="menu__item">
+        <button class="menu__btn bg-focus">
+          Авангард
+          <svg class="icon down-icon">
+            <use xlink:href="image/icons.svg#down-icon"></use>
+          </svg>              
+        </button>
+        <div class="menu__dropdown dropdown">
+        <div class="dropdown__simplebar">
+          <ul class="dropdown__list">
+            <li class="dropdown__item">
+              <a href="#"><img class="dropdown__item-img" src="image/013.jpg" alt="Кандинский" width="220" height="40"><span class="dropdown__item-title">Кандинский</span> </a>                
+            </li>
+            <li class="dropdown__item">
+              <a href="#"><img class="dropdown__item-img" src="image/014.jpg" alt="Маринетти" width="220" height="40"><span class="dropdown__item-title">Маринетти</span> </a>                
+            </li>
+            <li class="dropdown__item">
+              <a href="#"><img class="dropdown__item-img" src="image/015.jpg" alt="Малевич" width="220" height="40"><span class="dropdown__item-title">Малевич</span> </a>                
+            </li>
+            <li class="dropdown__item">
+              <a href="#"><img class="dropdown__item-img" src="image/016.jpg" alt="Пикассо" width="220" height="40"><span class="dropdown__item-title">Пикассо</span> </a>                
+            </li>
+            <li class="dropdown__item">
+              <a href="#"><img class="dropdown__item-img" src="image/013.jpg" alt="Кандинский" width="220" height="40"><span class="dropdown__item-title">Кандинский</span> </a>                
+            </li>
+            <li class="dropdown__item">
+              <a href="#"><img class="dropdown__item-img" src="image/014.jpg" alt="Маринетти" width="220" height="40"><span class="dropdown__item-title">Маринетти</span> </a>                
+            </li>
+            <li class="dropdown__item">
+              <a href="#"><img class="dropdown__item-img" src="image/015.jpg" alt="Малевич" width="220" height="40"><span class="dropdown__item-title">Малевич</span> </a>                
+            </li>
+            <li class="dropdown__item">
+              <a href="#"><img class="dropdown__item-img" src="image/016.jpg" alt="Пикассо" width="220" height="40"><span class="dropdown__item-title">Пикассо</span> </a>                
+            </li>
+          </ul>
+        </div>
+      </div>
+          </li>
+          <li class="menu__item">
+          <button class="menu__btn bg-focus">
+            Футуризм
+            <svg class="icon down-icon">
+              <use xlink:href="image/icons.svg#down-icon"></use>
+            </svg>              
+          </button>
+            <div class="menu__dropdown dropdown">
+            <div class="dropdown__simplebar">
+              <ul class="dropdown__list">
+                <li class="dropdown__item">
+                  <a href="#"><img class="dropdown__item-img" src="image/017.jpg" alt="Карра" width="220" height="40"><span class="dropdown__item-title">Карра</span> </a>                
+                </li>
+                <li class="dropdown__item">
+                  <a href="#"><img class="dropdown__item-img" src="image/018.jpg" alt="Прателла" width="220" height="40"><span class="dropdown__item-title">Прателла</span> </a>                
+                </li>
+                <li class="dropdown__item">
+                  <a href="#"><img class="dropdown__item-img" src="image/019.jpg" alt="Северини" width="220" height="40"><span class="dropdown__item-title">Северини</span> </a>                
+                </li>
+                <li class="dropdown__item">
+                  <a href="#"><img class="dropdown__item-img" src="image/020.jpg" alt="Балла" width="220" height="40"><span class="dropdown__item-title">Балла</span> </a>                
+                </li>
+                <li class="dropdown__item">
+                  <a href="#"><img class="dropdown__item-img" src="image/017.jpg" alt="Карра" width="220" height="40"><span class="dropdown__item-title">Карра</span> </a>                
+                </li>
+                <li class="dropdown__item">
+                  <a href="#"><img class="dropdown__item-img" src="image/018.jpg" alt="Прателла" width="220" height="40"><span class="dropdown__item-title">Прателла</span> </a>                
+                </li>
+                <li class="dropdown__item">
+                  <a href="#"><img class="dropdown__item-img" src="image/019.jpg" alt="Северини" width="220" height="40"><span class="dropdown__item-title">Северини</span> </a>                
+                </li>
+                <li class="dropdown__item">
+                  <a href="#"><img class="dropdown__item-img" src="image/020.jpg" alt="Балла" width="220" height="40"><span class="dropdown__item-title">Балла</span> </a>                
+                </li>
+              </ul>
+            </div>
+          </div>
+          </li>
+        </ul>     
+          <div class="form-container">
+            <button class="form-btn__open">
+              <svg class="icon search-icon">
+                <use xlink:href="image/icons.svg#search-icon"></use>
+              </svg>                   
+            </button>                
+            <form action="/" class="form">
+                <button class="form-btn__submit">
+                  <svg class="icon search-icon">
+                    <use xlink:href="image/icons.svg#search-icon"></use>
+                  </svg>     
+                </button>
+                <svg class="icon close-form-icon">
+                  <use xlink:href="image/icons.svg#close-icon"></use>
+                </svg>                    
+                <input class="form__input" type="text" placeholder="Поиск по сайту">
+            </form>
+          </div>
+        </div>  
+    </div>            
+</header> 
+<section class="main-slider">      
+  <div class="main-slider__swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="main-slider__img  main-slider__img-01"></div>
+      </div>
+      <div class="swiper-slide">
+        <div class="main-slider__img  main-slider__img-02"></div>
+      </div>
+      <div class="swiper-slide">
+        <div class="main-slider__img  main-slider__img-03"></div>
+      </div>
+    </div>
+  </div>
+<div class="main-slider__wrapper">
+  <div class="wrapper main-slider__content">
+    <h2 class="main-slider__title">Прикоснитесь к прекрасному</h2>
+    <div class="main-slider__text">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</div>
+    <button class="btn btn-purple main-slider__btn">Подписаться на рассылку</button>
+  </div>
+</div>
+</section> 
+
+<main class="main">
+  <h1 class="visually-hidden">Blanchard. Художественная галерея</h1>
+  
+  <section class="section about" id="about">
+    <div class="wrapper">
+      <h2 class="block-title about__title">О нас</h2>
+      <p class="about__text">Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.</p>
+    </div>        
+  </section>
+
+  <section class="gallery" id="gallery">
+    <div class="wrapper gallery-wrapper">
+      <div class="gallery-left__content">
+        <h2 class="block-title gallery__title">Галерея</h2>
+        <form action="" class="gallery__filter-form">
+          <div class="gallery__filter-form-top">
+            <label class="gallery__label gallery__label-select" for="gallery__select">Фильтр:</label>
+            <select name="gallery__select" id="gallery__select"> 
+              <option value="Живопись">Живопись</option>
+              <option value="Реализм">Реализм</option>
+              <option value="Импрессионизм">Импрессионизм</option>
+              <option value="Постимпрессионизм">Постимпрессионизм</option>
+              <option value="Авангард">Авангард</option>
+              <option value="Футуризм">Футуризм</option>
+            </select>
+          </div>              
+          <div class="gallery__filter-form-bottom">
+            <div class="gallery__row">
+              <input name="gallery__checkbox" type="checkbox" id="gallery__checkbox01" class="gallery__checkbox">
+              <label class="gallery__label" for="gallery__checkbox01">XIX век</label>
+            </div>            
+            <div class="gallery__row">
+              <input name="gallery__checkbox" type="checkbox" id="gallery__checkbox02" class="gallery__checkbox">
+              <label class="gallery__label" for="gallery__checkbox02">XX век</label>
+            </div>            
+            <div class="gallery__row">
+              <input name="gallery__checkbox" type="checkbox" id="gallery__checkbox03" class="gallery__checkbox">
+              <label class="gallery__label" for="gallery__checkbox03">Современность</label>
+            </div>            
+          </div>            
+        </form>
+      </div>
+      <div class="gallery-right__content">
+          <div class="gallery__right-btns">
+            <button class="sw-btn  gallery-btn__prev">
+              <svg class="icon left-icon">
+                <use xlink:href="image/icons.svg#left-icon"></use>
+              </svg>              
+            </button>
+            <div class="gallery-pagination__right"></div>
+            <button class="sw-btn  gallery-btn__next">
+              <svg class="icon right-icon">
+                <use xlink:href="image/icons.svg#right-icon"></use>
+              </svg>              
+            </button>
+          </div>
+          <div class="swiper-wrapper gallery-swiper-wrapper">
+            <button class="swiper-slide gallery-slide">
+                <picture>
+                  <img class="gallery-slide__img" src="image/g1.jpg" alt="изображение" width="350" height="350">
+                </picture>                  
+            </button>
+            <button class="swiper-slide gallery-slide">
+                <picture>
+                  <img class="gallery-slide__img" src="image/g2.jpg" alt="изображение" width="350" height="350">
+                </picture>                                    
+            </button>                  
+            <button class="swiper-slide gallery-slide">
+              <picture>              
+                <img class="gallery-slide__img" src="image/g3.jpg" alt="изображение" width="350" height="350">
+              </picture>                                                    
+            </button>
+            <button class="swiper-slide gallery-slide">
+              <picture>                            
+                <img class="gallery-slide__img" src="image/g4.jpg" alt="изображение" width="350" height="350">
+              </picture>                 
+            </button>   
+            <button class="swiper-slide gallery-slide">
+              <picture>                            
+                <img class="gallery-slide__img" src="image/g5.jpg" alt="изображение" width="350" height="350">
+              </picture>                 
+            </button>    
+            <button class="swiper-slide gallery-slide">
+              <picture>                            
+                <img class="gallery-slide__img" src="image/g6.jpg" alt="изображение" width="350" height="350">
+              </picture>                 
+            </button>  
+          </div>
+        </div>
+    </div>
+  </section>
+
+</main>
+<footer class="page-footer">
+
+</footer>
+
+</body>
+</html>
